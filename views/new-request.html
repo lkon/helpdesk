@@ -1,0 +1,71 @@
+{% extends "../layout.html" %}
+{% block content %}
+<main role="main">
+    <div class="container-divider"></div>
+    <div class="container">
+        <nav class="sub-nav">
+            <ol class="breadcrumbs">
+                <li title="CopyBet Ltd">
+                    <a href="">CopyBet Ltd</a>
+                </li>
+                <li title="Submit a request">
+                    Submit a request
+                </li>
+            </ol>
+            <form role="search" class="search" data-search="" action="/hc/en-us/search?preview%5Btheme_id%5D=360000113613&amp;preview_as_role=end_user&amp;use_theme_settings=false" accept-charset="UTF-8" method="get">
+                <input name="utf8" type="hidden" value="✓">
+                <input type="hidden" name="preview[theme_id]" id="preview_theme_id" value="360000113613">
+                <input type="hidden" name="preview_as_role" id="preview_as_role" value="end_user">
+                <input type="search" name="query" id="query" placeholder="Search" aria-label="Search">
+            </form>
+        </nav>
+        <h1>
+            Submit a request
+        </h1>
+        <div class="form">
+            <form id="new_request" data-form="" class="request-form" action="/hc/en-us/requests?preview%5Btheme_id%5D=360000113613&amp;preview_as_role=end_user&amp;use_theme_settings=false" accept-charset="UTF-8" method="post">
+                <input name="utf8" type="hidden" value="✓">
+                <input type="hidden" name="authenticity_token" value="ixXC47aZYPq5HSTE5QvFsMkXt/yC82xOKeTn1+uWQ8EwaB2sc7h6STK4rItpRwDd0oeo24+cPMif4LqMcT7saQ==">
+                <input type="hidden" name="preview[theme_id]" id="preview_theme_id" value="360000113613">
+                <input type="hidden" name="preview_as_role" id="preview_as_role" value="end_user">
+                <div class="form-field string  required  request_subject">
+                    <label for="request_subject">Subject</label>
+                    <input type="text" name="request[subject]" id="request_subject" maxlength="150" size="150">
+                </div>
+                <div class="suggestion-list" data-hc-class="searchbox" data-hc-suggestion-list="true"></div>
+                <div class="form-field text  required  request_description">
+                    <label for="request_description">Description</label>
+                    <textarea name="request[description]" id="request_description"></textarea>
+                    <p>Please enter the details of your request. A member of our support staff will respond as soon as possible.</p>
+                </div>
+                <div class="form-field">
+                    <label>Attachments</label>
+                    <div id="upload-dropzone" class="upload-dropzone">
+                        <input type="file" multiple="true" id="request-attachments" data-fileupload="true" data-dropzone="upload-dropzone" data-error="upload-error" data-create-url="/hc/en-us/request_uploads?preview%5Btheme_id%5D=360000113613&amp;preview_as_role=end_user&amp;use_theme_settings=false" data-name="request[attachments][]" data-pool="request-attachments-pool" data-delete-confirm-msg="">
+                        <span>
+                            <a>Add file</a>
+                            or drop files here
+                        </span>
+                    </div>
+                    <div id="upload-error" class="notification notification-error notification-inline" style="display: none;">
+                        <span data-upload-error-message=""></span>
+                    </div>
+                    <ul id="request-attachments-pool" class="upload-pool" data-template="upload-template"></ul>
+                    <script type="text/html" id="upload-template">
+                        <li class="upload-item" data-upload-item>
+                            <a class="upload-link" target="_blank" data-upload-link></a>
+                            <p class="upload-path" data-upload-path></p>
+                            <span class="upload-remove" data-upload-remove></span>
+                            <div class="upload-progress" data-upload-progress></div>
+                            <input type="hidden">
+                        </li>
+                    </script>
+                </div>
+                <footer>
+                    <input type="submit" name="commit" value="Submit">
+                </footer>
+            </form>
+        </div>
+    </div>
+</main>
+{% endblock %}

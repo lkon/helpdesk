@@ -1,0 +1,51 @@
+{% extends "../layout.html" %}
+{% block content %}
+<main role="main">
+    <nav class="my-activities-nav collapsible-nav">
+        <ul class="collapsible-nav-list container">
+            <li>
+                <a class="requests-link" href="">Requests</a>
+            </li>
+            <li>
+                <a href="">Contributions</a>
+            </li>
+            <li aria-selected="true">Following</li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="my-activities-header">
+            <h1>Following</h1>
+        </header>
+        <div class="my-activities-following-header">
+            <span class="dropdown">
+                <span class="dropdown-toggle">
+                    Show all
+                </span>
+                <span class="dropdown-menu" role="menu">
+                    <a href="" aria-selected="true" role="menuitem">
+                        All
+                    </a>
+                    <a href="" aria-selected="false" role="menuitem">
+                        Sections
+                    </a>
+                    <a href="" aria-selected="false" role="menuitem">
+                        Articles
+                    </a>
+                    <a href="" aria-selected="false" role="menuitem">
+                        Topics
+                    </a>
+                    <a href="" aria-selected="false" role="menuitem">
+                        Posts
+                    </a>
+                    <a href="" aria-selected="false" role="menuitem">
+                        Users
+                    </a>
+                </span>
+            </span>
+        </div>
+        <div class="requests">
+            <p class="no-activities">You are not following anything yet.</p>
+        </div>
+    </div>
+</main>
+{% endblock %}

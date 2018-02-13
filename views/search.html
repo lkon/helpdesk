@@ -1,0 +1,52 @@
+{% extends "../layout.html" %}
+{% block content %}
+<main role="main">
+    <div class="container-divider"></div>
+    <div class="container">
+        <nav class="sub-nav">
+            <ol class="breadcrumbs">
+                <li title="CopyBet Ltd">
+                    <a href="">CopyBet Ltd</a>
+                </li>
+                <li title="Search results">
+                    Search results
+                </li>
+            </ol>
+            <form role="search" class="search" data-search="" action="/hc/en-us/search?preview%5Btheme_id%5D=360000113613&amp;preview_as_role=end_user&amp;use_theme_settings=false" accept-charset="UTF-8" method="get">
+                <input name="utf8" type="hidden" value="✓">
+                <input type="hidden" name="preview[theme_id]" id="preview_theme_id" value="360000113613">
+                <input type="hidden" name="preview_as_role" id="preview_as_role" value="end_user">
+                <input type="search" name="query" id="query" value="" placeholder="Search" autofocus="autofocus" aria-label="Search">
+            </form>
+        </nav>
+        <header class="page-header">
+            <h1>Search results</h1>
+            <p class="page-header-description">No results for ""</p>
+        </header>
+        <div class="search-results">
+            <section class="search-results-column">
+                <h3 class="search-results-subheading">
+                    Knowledge base
+                </h3>
+                <p>
+                    No results for "".
+                    <a title="Home" href="">
+                        Browse knowledge base
+                    </a>
+                </p>
+            </section>
+            <section class="search-results-column">
+                <h3 class="search-results-subheading">
+                    Community
+                </h3>
+                <p>
+                    No results for "".
+                    <a href="">
+                        Browse Community
+                    </a>
+                </p>
+            </section>
+        </div>
+    </div>
+</main>
+{% endblock %}

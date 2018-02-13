@@ -1,0 +1,37 @@
+{% extends "../layout.html" %}
+{% block content %}
+<main role="main">
+    <nav class="my-activities-nav collapsible-nav">
+        <ul class="collapsible-nav-list container">
+            <li>
+                <a class="requests-link" href="">Requests</a>
+            </li>
+            <li aria-selected="true">Contributions</li>
+            <li>
+                <a href="">Following</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="my-activities-header">
+            <h1>Contributions</h1>
+            <nav class="my-activities-sub-nav collapsible-nav">
+                <ul class="collapsible-nav-list">
+                    <li>
+                        <a href="">Posts</a>
+                    </li>
+                    <li>
+                        <a href="">Community comments</a>
+                    </li>
+                    <li>
+                        <a href="">Article comments</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <div class="requests">
+            <p class="no-activities">You currently have no contributions.</p>
+        </div>
+    </div>
+</main>
+{% endblock %}

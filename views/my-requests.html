@@ -1,0 +1,51 @@
+{% extends "../layout.html" %}
+{% block content %}
+<main role="main">
+    <nav class="my-activities-nav collapsible-nav">
+        <ul class="collapsible-nav-list container">
+            <li aria-selected="true">Requests</li>
+            <li>
+                <a href="">Contributions</a>
+            </li>
+            <li>
+                <a href="">Following</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container">
+        <header class="my-activities-header">
+            <h1>My requests</h1>
+            <nav class="my-activities-sub-nav collapsible-nav">
+                <ul class="collapsible-nav-list">
+                    <li>
+                        <a href="">My requests</a>
+                    </li>
+                    <li>
+                        <a href="">Requests I'm CC'd on</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <form data-form="" class="requests-table-toolbar" action="/hc/en-us/requests" accept-charset="UTF-8" method="get">
+            <input name="utf8" type="hidden" value="✓">
+            <input type="hidden" name="preview[theme_id]" id="preview_theme_id" value="360000113613">
+            <input type="hidden" name="preview_as_role" id="preview_as_role" value="end_user">
+            <div class="search">
+                <input type="search" name="query" id="quick-search" value="" placeholder="Search requests" class="requests-search">
+            </div>
+            <div class="request-table-filter"></div>
+            <div class="request-table-filter">
+                <label class="request-filter request-filter-label" for="request-status-select">Status:</label>
+                <select name="status" id="request-status-select" class="request-filter">
+                    <option value="">Any</option>
+                    <option value="open">Open</option>
+                    <option value="answered">Awaiting your reply</option>
+                    <option value="solved">Solved</option>
+                </select>
+            </div>
+        </form>
+        <p class="no-activities">No requests found.</p>
+        <div class="requests"></div>
+    </div>
+</main>
+{% endblock %}

@@ -9,52 +9,54 @@
     <link rel="alternate" hreflang="en" href="https://help.copybet.com/hc/en-us?preview%5Btheme_id%5D=115001603429&amp;preview_as_role=manager&amp;use_theme_settings=false">
     <link rel="alternate" hreflang="ru" href="https://help.copybet.com/hc/ru?preview%5Btheme_id%5D=115001603429&amp;preview_as_role=manager&amp;use_theme_settings=false">
     <link rel="stylesheet" media="all" href="http://p14.zdassets.com/hc/assets/application-3b0b6df180f05e3fa954d2e4d90e4600.css" id="stylesheet">
-    <link rel="stylesheet" type="text/css" href="public/css/theme.css">
+    <link rel="stylesheet" type="text/css" href="/public/css/styles.css">
     <link rel="shortcut icon" type="image/x-icon" href="http://p14.zdassets.com/hc/settings_assets/1572024/115000079325/V0HtNIbuaTUvWZ1pDQr8YA-32x32.png">
     <script src="http://p14.zdassets.com/hc/assets/jquery-b60ddb79ff2563b75442a6bac88b00b5.js"></script>
     <meta name="robots" content="noindex">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script type="text/javascript" src="public/js/main.js"></script>
+    <script type="text/javascript" src="/public/js/main.js"></script>
 </head>
 <body class="community-enabled">
 <div class="top">
     <header class="header">
         <div class="logo">
             <a title="Home" href="">
-                <img src="http://p14.zdassets.com/hc/settings_assets/1572024/115000079325/aslJiVK5LW3x76SExU6zmA-logo-alter.svg" alt="Logo">
+                <img src="http://p14.zdassets.com/hc/settings_assets/1572024/115000079325/2gt34i6iWoVa20PCInntSg-logo-alter.svg" alt="Logo">
             </a>
         </div>
         <div class="nav-wrapper">
             <span class="icon-menu"></span>
             <nav class="user-nav" id="user-nav">
-                <a class="submit-a-request" href="">Submit a request</a>
-                <a href="">Start copying</a>
+                <a class="submit-a-request" href="" role="button" >Submit a request</a>
+                <a class="start-copying" href="" role="button">Start copying</a>
+                <a class="login" data-auth-action="signin" role="button" href="">Sign in</a>
             </nav>
-            <a class="login" data-auth-action="signin" role="button" href="">Sign in</a>
-            <div id="user" class="user-info dropdown" data-helper="user_info">
-                <div class="btn with-image dropdown-toggle" role="button">
-                    <img id="user-avatar" class="user-avatar" alt="Agent #2" src="" style="background-color: #fff;">
-                    <span id="user-name">Agent #2</span>
-                </div>
-                <div id="user-dropdown" class="dropdown-menu dropdown-menu-end dropdown-menu-caret" aria-expanded="false">
-                    <div role="menu" id="user-menu">
-                        <a class="my-activities" href="" role="menuitem">
-                            My activities
-                        </a>
-                        <a role="menuitem" href="">My profile</a>
-                    </div>
+        </div>
+        <div id="user" class="user-info dropdown" data-helper="user_info">
+            <div class="btn with-image dropdown-toggle" role="button">
+                <img id="user-avatar" class="user-avatar" alt="" src="" style="background-color: #fff;">
+                <span id="user-name">Agent #2</span>
+            </div>
+            <div id="user-dropdown" class="dropdown-menu dropdown-menu-end dropdown-menu-caret" aria-expanded="false">
+                <div role="menu" id="user-menu">
+                    <a class="my-activities" href="" role="menuitem">
+                        My activities
+                    </a>
+                    <a role="menuitem" href="">My profile</a>
                 </div>
             </div>
         </div>
-        <div class="header-language-selector">
-            <div class="dropdown language-selector" aria-haspopup="true">
+        <div class="header__lang">
+            <div class="dropdown lang" aria-haspopup="true">
                 <a class="dropdown-toggle">
-                    English (US)
+                    <i class="lang__flag lang__flag_en" role="img"></i>
+                    <span class="lang__name">EN</span>
                 </a>
-                <span class="dropdown-menu dropdown-menu-end" role="menu">
+                <span class="dropdown-menu dropdown-menu-end" role="menu" aria-expanded="true">
                     <a href="" dir="ltr" rel="nofollow" role="menuitem">
-                        Русский
+                        <i class="lang__flag lang__flag_ru" role="img"></i>
+                        <span class="lang__name">RU</span>
                     </a>
                 </span>
             </div>
@@ -86,18 +88,6 @@
             <a href="" class=""><i class="fa fa-vk" aria-hidden="true"></i></a>
             <a href="" class="">
                 <i class="fa fa-youtube" aria-hidden="true"></i></a>
-        </div>
-        <div class="footer-language-selector">
-            <div class="dropdown language-selector" aria-haspopup="true">
-                <a class="dropdown-toggle">
-                    English (US)
-                </a>
-                <span class="dropdown-menu dropdown-menu-end" role="menu">
-                    <a href="" dir="ltr" rel="nofollow" role="menuitem">
-                        Русский
-                    </a>
-                </span>
-            </div>
         </div>
         <div class="footer__content">
             <div class="footer__links">

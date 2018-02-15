@@ -1,0 +1,36 @@
+.hero {
+    background-image: var(--homepage_background_image), linear-gradient(to right, rgb(36, 57, 86), rgb(187, 203, 22));
+    background-position: 72% 50%;
+    background-repeat: no-repeat;
+    height: 336px;
+    padding: 0 20px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        background-position: 100% 50%;
+    }
+}
+
+.hero-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 65px 5% 0;
+}
+
+@media (min-width: 1160px) {
+    .hero-inner {
+        padding-left: 0;
+        padding-right: 0;
+        width: 90%;
+    }
+}
+
+.hero-title {
+    margin: 13px 0;
+    font-size: 48px;
+    line-height: 50px;
+    font-family: var(--font_1);
+    color: #fff;
+}

@@ -1,0 +1,112 @@
+.collapsible-nav {
+    border-bottom: 1px solid #ddd;
+    border-top: 1px solid #ddd;
+    flex-direction: column;
+    max-height: 45px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    .collapsible-nav {
+        border: 0;
+        height: auto;
+        flex-direction: row;
+        max-height: none;
+    }
+}
+
+.collapsible-nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .collapsible-nav-list {
+        flex-direction: row;
+    }
+}
+
+.collapsible-nav-list li {
+    color: var(--color_3);
+    line-height: 45px;
+    order: 1;
+}
+
+@media (min-width: 768px) {
+    .collapsible-nav-list li {
+        line-height: normal;
+        margin-right: 30px;
+    }
+
+    [dir="rtl"] .collapsible-nav-list li {
+        margin-left: 30px;
+        margin-right: 0;
+    }
+
+    .collapsible-nav-list li a {
+        text-decoration: none;
+        padding: 15px 0;
+    }
+}
+
+.collapsible-nav-list li a {
+    color: var(--color_3);
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .collapsible-nav-list li:hover {
+        border-bottom: 4px solid #ddd;
+    }
+
+    .collapsible-nav-list li:hover a {
+        padding: 15px 0 11px 0;
+        text-decoration: none;
+    }
+}
+
+.collapsible-nav-list li[aria-selected="true"] {
+    order: 0;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .collapsible-nav-list li[aria-selected="true"] {
+        border-bottom: 4px solid var(--color_1);
+        order: 1;
+        padding: 15px 0 11px 0;
+    }
+}
+
+.collapsible-nav-list li[aria-selected="true"] a {
+    color: var(--color_3);
+}
+
+.collapsible-nav-list li[aria-selected="true"]::after {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "\25BE";
+    position: absolute;
+    right: 0;
+}
+
+@media (min-width: 768px) {
+    .collapsible-nav-list li[aria-selected="true"]::after {
+        display: none;
+    }
+}
+
+[dir="rtl"] .collapsible-nav-list li[aria-selected="true"]::after {
+    left: 0;
+    right: auto;
+}
+
+.collapsible-nav[aria-expanded="true"] {
+    max-height: none;
+}
+
+.collapsible-nav[aria-expanded="true"] li[aria-selected="true"]::after {
+    content: "\2715";
+}

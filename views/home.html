@@ -1,13 +1,14 @@
-{% extends "../layout.html" %}
-{% block content %}
+{% extends "../layout.html" %}{% block content %}
 <main role="main">
     <section class="section hero">
         <div class="hero-inner">
-            <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="/hc/en-us/search?preview%5Btheme_id%5D=360000113613&amp;preview_as_role=end_user&amp;use_theme_settings=false" accept-charset="UTF-8" method="get">
+            <h1 class="hero-title">FAQ</h1>
+            <form role="search" class="search search-full" data-search="" data-instant="true" autocomplete="off" action="" accept-charset="UTF-8" method="get">
                 <input name="utf8" type="hidden" value="✓">
-                <input type="hidden" name="preview[theme_id]" id="preview_theme_id" value="360000113613">
+                <input type="hidden" name="preview[theme_id]" id="preview_theme_id" value="360000125294">
                 <input type="hidden" name="preview_as_role" id="preview_as_role" value="end_user">
-                <input type="search" name="query" id="query" placeholder="Search" autocomplete="off" aria-label="Search">
+                <input type="search" name="query" id="query" placeholder="Type your question here" autocomplete="off" aria-label="Type your question here">
+                <input type="submit" name="commit" value="Search">
             </form>
         </div>
     </section>
@@ -59,5 +60,4 @@
             </section>
         </section>
     </div>
-</main>
-{% endblock %}
+</main>{% endblock %}

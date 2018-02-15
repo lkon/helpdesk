@@ -14,7 +14,6 @@ app.use(express.static('public'));
 var pages = [
     'pages',
     'my-requests',
-    'index',
     'contributions',
     'home',
     'new-request',

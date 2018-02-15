@@ -1,0 +1,52 @@
+.collapsible-sidebar {
+    flex: 1;
+    max-height: 45px;
+    overflow: hidden;
+    padding: 10px 0;
+    position: relative;
+}
+
+@media (min-width: 1024px) {
+    .collapsible-sidebar {
+        max-height: none;
+        padding: 0;
+    }
+}
+
+.collapsible-sidebar[aria-expanded="true"] {
+    max-height: none;
+}
+
+.collapsible-sidebar[aria-expanded="true"] .collapsible-sidebar-title::after {
+    content: "\2715";
+}
+
+@media (min-width: 1024px) {
+    .collapsible-sidebar[aria-expanded="true"] .collapsible-sidebar-title::after {
+        display: none;
+    }
+}
+
+.collapsible-sidebar-title {
+    margin-top: 0;
+}
+
+.collapsible-sidebar-title::after {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    content: "\25BE";
+    position: absolute;
+    right: 10px;
+}
+
+@media (min-width: 1024px) {
+    .collapsible-sidebar-title::after {
+        display: none;
+    }
+}
+
+[dir="rtl"] .collapsible-sidebar-title::after {
+    left: 10px;
+    right: auto;
+}

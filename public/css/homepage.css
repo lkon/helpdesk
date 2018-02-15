@@ -1,0 +1,14 @@
+.section {
+    margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+    .section {
+        margin-bottom: 60px;
+    }
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    text-align: center;
+}

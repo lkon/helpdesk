@@ -1,5 +1,5 @@
 .hero {
-    background-image: var(--homepage_background_image), linear-gradient(to right, rgb(36, 57, 86), rgb(187, 203, 22));
+    background-image: var(--homepage_background_image), linear-gradient(to right, rgb(36, 57, 86) 50%, rgb(187, 203, 22) 50%);
     background-position: 72% 50%;
     background-repeat: no-repeat;
     height: 336px;

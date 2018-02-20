@@ -8,34 +8,42 @@
 }
 
 .recent-activity-item {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #2e415d;
     overflow: auto;
     padding: 20px 0;
 }
 
-.recent-activity-item-parent {
+.recent-activity-item-parent,
+.recent-activity-item-link {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 0;
     font-size: 16px;
 }
 
-.recent-activity-item-parent, .recent-activity-item-link {
-    margin: 6px 0;
-    color: var(--color_3);
-    display: inline-block;
-    width: 100%;
+.recent-activity-item-parent {
+    color: #fff;
+}
+
+.recent-activity-item-link {
+    color: #7d90a9;
 }
 
 @media (min-width: 768px) {
-    .recent-activity-item-parent, .recent-activity-item-link {
+    .recent-activity-item-parent,
+    .recent-activity-item-link {
         width: 70%;
         margin: 0;
     }
 }
 
-.recent-activity-item-link {
-    font-size: 14px;
-    font-weight: 300;
+.recent-activity-item-parent:hover {
+    color: var(--color_2);
 }
 
+.recent-activity-item-link:hover {
+    color: #fff;
+}
 .recent-activity-item-meta {
     margin: 15px 0 0 0;
     float: none;
@@ -52,8 +60,9 @@
     }
 }
 
-.recent-activity-item-time, .recent-activity-item-comment {
-    color: var(--color_3), 20%;
+.recent-activity-item-time,
+.recent-activity-item-comment {
+    color: #7d90a9;
     display: inline-block;
     font-size: 13px;
     font-weight: 300;
@@ -72,7 +81,6 @@
 }
 
 .recent-activity-item-comment span::before {
-    color: var(--color_1);
     content: "\1F4AC";
     display: inline-block;
     font-size: 15px;

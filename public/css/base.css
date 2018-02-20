@@ -56,7 +56,7 @@ html {
 body {
     min-height: 100vh;
     background-color: var(--color_5);
-    color: var(--color_3);
+    color: var(--color_4);
     font-family: var(--font_2);
     font-size: 15px;
     font-weight: 400;
@@ -76,7 +76,7 @@ main {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font_1);
+    font-family: var(--font_3);
     font-weight: 400;
     margin-top: 0;
 }

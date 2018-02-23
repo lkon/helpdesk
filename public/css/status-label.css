@@ -55,7 +55,7 @@
 }
 
 .status-label-closed {
-    background-color: #ddd;
+    background-color: var(--color_5);
 }
 
 .status-label-solved {

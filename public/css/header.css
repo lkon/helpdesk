@@ -91,6 +91,11 @@
 @media (min-width: 768px) {
     .nav-wrapper .user-nav a {
         display: inline-block;
+        font-size: 22px;
+    }
+}
+@media (min-width: 1200px) {
+    .nav-wrapper .user-nav a {
         font-size: 30px;
         line-height: 1;
     }
@@ -232,7 +237,7 @@
 .lang.dropdown .dropdown-menu {
     min-width: auto;
     font-size: 0;
-
+    background: #223145;
 }
 
 .lang.dropdown .dropdown-menu [role="menuitem"] {

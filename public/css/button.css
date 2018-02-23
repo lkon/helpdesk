@@ -42,7 +42,7 @@
 }
 
 .button-large, input[type="submit"] {
-    background-color: var(--color_1);
+    background-color: var(--color_5);
     border: 0;
     border-radius: 4px;
     color: var(--color_2);
@@ -61,21 +61,21 @@
 }
 
 .button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
-    background-color: var(--color_1), 20%;
+    background-color: var(--color_5), 20%;
 }
 
 .button-large[disabled], input[type="submit"][disabled] {
-    background-color: #ddd;
+    background-color: var(--color_5);
 }
 
 .button-secondary {
     color: var(--color_3), 20%;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     background-color: transparent;
 }
 
 .button-secondary:hover, .button-secondary:focus, .button-secondary:active {
     color: var(--color_3);
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     background-color: var(--color_5), 3%;
 }

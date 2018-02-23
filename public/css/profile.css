@@ -134,7 +134,7 @@
 }
 
 .profile-stats-activity {
-    border-top: solid 1px #ddd;
+    border-top: solid 1px var(--color_5);
     margin-top: 15px;
 }
 
@@ -179,7 +179,7 @@
 }
 
 .profile-stats-counters {
-    border-bottom: solid 1px #ddd;
+    border-bottom: solid 1px var(--color_5);
 }
 
 @media (min-width: 768px) {
@@ -484,12 +484,12 @@
 
 @media (min-width: 768px) {
     .profile-activity:not(:last-child) {
-        border-left: 1px solid #ddd;
+        border-left: 1px solid var(--color_5);
     }
 
     [dir="rtl"] .profile-activity:not(:last-child) {
         border-left: 0;
-        border-right: 1px solid #ddd;
+        border-right: 1px solid var(--color_5);
     }
 }
 

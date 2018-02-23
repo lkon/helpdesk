@@ -2,123 +2,85 @@
 
 /***** Base *****/
 @import "base.css";
-
 /***** Buttons *****/
 @import "button.css";
-
 /***** Tables *****/
 @import "table.css";
-
 /***** Forms *****/
 @import "form.css";
-
 /***** Header *****/
 @import "header.css";
-
 /***** Footer *****/
 @import "footer.css";
-
 /***** Breadcrumbs *****/
 @import "breadcrumbs.css";
-
 /***** Search field *****/
 @import "search.css";
-
 /***** Hero component *****/
 @import "hero.css";
-
 @import "page-header.css";
 @import "sub-nav.css";
-
 /***** Blocks *****//* Used in Homepage#categories and Community#topics */
 @import "blocks.css";
-
 /***** Homepage *****/
 @import "homepage.css";
-
 /***** Promoted articles *****/
 @import "promoted-articles.css";
-
 /***** Community section in homepage *****/
 @import "community-in-main.css";
-
 /***** Recent activity *****/
 @import "recent-activity.css";
-
 /***** Category pages *****/
 @import "category.css";
-
 /***** Section pages *****/
 @import "section.css";
-
 /***** Article *****/
 @import "article.css";
-
 /***** Attachments *****//* Styles attachments inside posts, articles and comments */
 @import "attachments.css";
-
 /***** Social share links *****/
 @import "share.css";
-
 /***** Comments *****//* Styles comments inside articles, posts and requests */
 @import "comment.css";
-
 /***** Vote *****//* Used in article comments, post comments and post */
 @import "vote.css";
-
 /***** Actions *****//* Styles admin and en user actions(edit, delete, change status) in comments and posts */
 @import "actions.css";
-
 /***** Community *****/
 @import "community.css";
-
 /***** Striped list *****//* Used in community posts list and requests list */
 @import "striped-list.css";
-
 /***** Status labels *****//* Styles labels used in posts, articles and requests */
 @import "status-label.css";
-
 /***** Post *****//* The post grid is defined this way: Content | Sidebar 70%     | 30% */
 @import "post.css";
-
 /* Navigation element that collapses on mobile */
 @import "collapsible-nav.css";
-
 /* Sidebar navigation that collapses on mobile */
 @import "collapsible-sidebar.css";
-
 /***** My activities *****/
 @import "my-activities.css";
-
 /* Requests table */
 @import "requests.css";
-
 /* Following table */
 @import "subscriptions.css";
-
 /* Contributions table */
 @import "contributions.css";
-
 /***** Request *****/
 @import "request.css";
-
 /***** Pagination *****/
 @import "pagination.css";
-
 /***** Metadata *****/
 @import "meta.css";
-
 /***** Icons *****/
 @import "icons.css";
-
 /***** User Profiles *****/
 @import "profile.css";
-
 /***** Search results *****/
 @import "search-results.css";
 
 .dropdown-menu {
-    background: #223145;
+    background: #2e415d;
     border: none;
     border-radius: 1px;
     box-shadow: rgba(0, 0, 0, 0.117647) 0 1px 4px, rgba(0, 0, 0, 0.117647) 0 1px 2px;
@@ -132,6 +94,11 @@
 .dropdown-menu [role="menuitem"] {
     color: #d4dde7;
 }
+
+.dropdown-menu [role="menuitem"][aria-selected="true"] {
+    background-color: transparent;
+}
+
 .dropdown-menu [role="menuitem"]:hover {
     color: var(--color_2);
     background-color: transparent;

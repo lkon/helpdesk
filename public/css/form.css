@@ -13,7 +13,7 @@
 }
 
 .form-field input {
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     border-radius: 4px;
     padding: 10px;
     width: 100%;
@@ -24,7 +24,7 @@
 }
 
 .form-field input[type="text"] {
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     border-radius: 4px;
 }
 
@@ -91,7 +91,7 @@
 }
 
 .form .suggestion-list label {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid var(--color_5);
     display: block;
     padding-bottom: 5px;
 }

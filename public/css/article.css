@@ -110,7 +110,7 @@
 
 .article-body code {
     background: var(--color_5), 3%;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     border-radius: 3px;
     padding: 0 5px;
     margin: 0 2px;
@@ -118,7 +118,7 @@
 
 .article-body pre {
     background: var(--color_5), 3%;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     border-radius: 3px;
     padding: 10px 15px;
     overflow: auto;
@@ -126,7 +126,7 @@
 }
 
 .article-body blockquote {
-    border-left: 1px solid #ddd;
+    border-left: 1px solid var(--color_5);
     color: var(--color_3), 20%;
     font-style: italic;
     padding: 0 15px;
@@ -167,8 +167,8 @@
 }
 
 .article-sidebar {
-    border-bottom: 1px solid #ddd;
-    border-top: 1px solid #ddd;
+    border-bottom: 1px solid var(--color_5);
+    border-top: 1px solid var(--color_5);
     flex: 1 0 auto;
     margin-bottom: 20px;
     padding: 0;
@@ -183,7 +183,7 @@
 }
 
 .article-relatives {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--color_5);
     display: flex;
     flex-direction: column;
     padding: 20px 0;
@@ -211,7 +211,7 @@
 }
 
 .article-votes {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--color_5);
     padding: 30px 0;
     text-align: center;
 }
@@ -266,7 +266,7 @@
 }
 
 .article-return-to-top {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--color_5);
 }
 
 @media (min-width: 1024px) {

@@ -11,7 +11,7 @@
 }
 
 .community {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--color_5);
     padding: 30px 0;
 }
 

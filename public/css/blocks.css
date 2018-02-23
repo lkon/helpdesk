@@ -1,3 +1,7 @@
+.blocks {
+    background: #223145;
+}
+
 .blocks-list {
     display: flex;
     flex-direction: row;
@@ -17,7 +21,6 @@
     .blocks-item {
         flex-grow: 1;
         flex-basis: 260px;
-        margin-bottom: 10px;
     }
 }
 
@@ -39,10 +42,11 @@
 
 .blocks-item-title {
     margin: 0;
-    padding: 10px 0 8px;
+    padding: 20px 0 18px;
     font-size: 18px;
     font-family: var(--font_2);
     color: #7d90a9;
+    border-bottom: 2px solid transparent;
 }
 
 .blocks-item-description {
@@ -60,7 +64,7 @@
 .blocks-item:focus .blocks-item-title,
 .blocks-item:active .blocks-item-title {
     color: #fff;
-    border-bottom: 2px solid var(--color_2);
+    border-bottom-color: var(--color_2);
 }
 
 .blocks-item:hover *, .blocks-item:focus *, .blocks-item:active * {

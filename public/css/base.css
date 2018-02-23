@@ -37,7 +37,7 @@
     --color_2: #d0d941;
     --color_3: #c1c6cf;
     --color_4: #d4dde7;
-    --color_5: #395173;
+    --color_5: #2e415d;
     --font_1: 'Qanelas Black';
     --font_2: 'Qanelas Medium';
     --font_3: 'Qanelas Bold';
@@ -55,7 +55,7 @@ html {
 
 body {
     min-height: 100vh;
-    background-color: var(--color_5);
+    background-color: var(--color_1);
     color: var(--color_4);
     font-family: var(--font_2);
     font-size: 15px;
@@ -65,7 +65,7 @@ body {
 }
 
 main {
-    background-color: var(--color_5);
+    background-color: var(--color_1);
 }
 
 @media (min-width: 768px) {
@@ -125,7 +125,7 @@ input:focus {
 }
 
 input[disabled] {
-    background-color: #ddd;
+    background-color: var(--color_5);
 }
 
 select {
@@ -133,7 +133,7 @@ select {
     -moz-appearance: none;
     background: url("/hc/assets/dropdown-arrow.svg") no-repeat #fff;
     background-position: right 10px center;
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     border-radius: 4px;
     padding: 8px 30px 8px 10px;
     outline: none;
@@ -150,7 +150,7 @@ select::-ms-expand {
 }
 
 textarea {
-    border: 1px solid #ddd;
+    border: 1px solid var(--color_5);
     border-radius: 2px;
     resize: vertical;
     width: 100%;
@@ -176,7 +176,7 @@ textarea:focus {
 }
 
 .container-divider {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid var(--color_5);
     margin-bottom: 20px;
 }
 

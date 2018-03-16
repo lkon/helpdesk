@@ -7,70 +7,71 @@
 }
 
 .form-field label {
-    display: block;
     font-size: 13px;
+    display: block;
     margin-bottom: 5px;
 }
 
 .form-field input {
+    width: 100%;
+    padding: 10px;
     border: 1px solid var(--color_5);
     border-radius: 4px;
-    padding: 10px;
-    width: 100%;
 }
 
 .form-field input:focus {
     border: 1px solid var(--color_1);
 }
 
-.form-field input[type="text"] {
+.form-field input[type='text'] {
     border: 1px solid var(--color_5);
     border-radius: 4px;
 }
 
-.form-field input[type="text"]:focus {
+.form-field input[type='text']:focus {
     border: 1px solid var(--color_1);
 }
 
-.form-field input[type="checkbox"] {
+.form-field input[type='checkbox'] {
     width: auto;
 }
 
 .form-field .nesty-input {
-    border-radius: 4px;
-    height: 40px;
     line-height: 40px;
-    outline: none;
+    height: 40px;
     vertical-align: middle;
+    border-radius: 4px;
+    outline: none;
 }
 
 .form-field .nesty-input:focus {
-    border: 1px solid var(--color_1);
     text-decoration: none;
+    border: 1px solid var(--color_1);
 }
 
 .form-field textarea {
     vertical-align: middle;
 }
 
-.form-field input[type="checkbox"] + label {
+.form-field input[type='checkbox'] + label {
     margin: 0 0 0 10px;
 }
 
 .form-field.required > label::after {
-    content: "*";
-    color: #f00;
     margin-left: 2px;
+    content: '*';
+    color: #f00;
 }
 
 .form-field p {
-    color: var(--color_3), 20%;
     font-size: 12px;
     margin: 5px 0;
+    color: var(--color_3), 20%;
 }
 
-[data-loading="true"] input, [data-loading="true"] textarea {
-    background: transparent url("/hc/assets/loader.gif") 99% 50% no-repeat;
+[data-loading='true'] input,
+[data-loading='true'] textarea {
+    background: transparent url('/hc/assets/loader.gif') 99% 50% no-repeat;
     background-size: 16px 16px;
 }
 
@@ -80,9 +81,9 @@
 }
 
 .form footer a {
-    color: var(--color_3), 20%;
-    cursor: pointer;
     margin-right: 15px;
+    cursor: pointer;
+    color: var(--color_3), 20%;
 }
 
 .form .suggestion-list {
@@ -91,9 +92,9 @@
 }
 
 .form .suggestion-list label {
-    border-bottom: 1px solid var(--color_5);
     display: block;
     padding-bottom: 5px;
+    border-bottom: 1px solid var(--color_5);
 }
 
 .form .suggestion-list li {

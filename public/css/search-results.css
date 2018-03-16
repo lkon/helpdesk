@@ -26,8 +26,8 @@
 }
 
 .search-results-list > li {
-    border-bottom: 1px solid var(--color_5);
     padding: 20px 0;
+    border-bottom: 1px solid var(--color_5);
 }
 
 .search-results-list > li:first-child {
@@ -38,41 +38,47 @@
     margin-top: 15px;
 }
 
-.search-result-votes, .search-result-meta-count {
-    color: var(--color_3), 20%;
-    display: inline-block;
+.search-result-votes,
+.search-result-meta-count {
     font-size: 13px;
     font-weight: 300;
-    padding: 4px 5px;
     position: relative;
+    display: inline-block;
+    padding: 4px 5px;
+    color: var(--color_3), 20%;
 }
 
-.search-result-votes::before, .search-result-meta-count::before {
+.search-result-votes::before,
+.search-result-meta-count::before {
     color: var(--color_1);
 }
 
-[dir="ltr"] .search-result-votes, [dir="ltr"] .search-result-meta-count {
+[dir='ltr'] .search-result-votes,
+[dir='ltr'] .search-result-meta-count {
     margin-left: 5px;
 }
 
-[dir="ltr"] .search-result-votes::before, [dir="ltr"] .search-result-meta-count::before {
+[dir='ltr'] .search-result-votes::before,
+[dir='ltr'] .search-result-meta-count::before {
     margin-right: 3px;
 }
 
-[dir="rtl"] .search-result-votes, [dir="rtl"] .search-result-meta-count {
+[dir='rtl'] .search-result-votes,
+[dir='rtl'] .search-result-meta-count {
     margin-right: 5px;
 }
 
-[dir="rtl"] .search-result-votes::before, [dir="rtl"] .search-result-meta-count::before {
+[dir='rtl'] .search-result-votes::before,
+[dir='rtl'] .search-result-meta-count::before {
     margin-left: 3px;
 }
 
 .search-result-votes::before {
-    content: "\1F44D";
+    content: '\1F44D';
 }
 
 .search-result-meta-count::before {
-    content: "\1F4AC";
+    content: '\1F4AC';
 }
 
 .search-result .meta-group {
@@ -84,7 +90,7 @@
 }
 
 .search-result-breadcrumbs li:last-child::after {
-    content: "·";
     display: inline-block;
     margin: 0 5px;
+    content: '·';
 }

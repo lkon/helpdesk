@@ -7,12 +7,12 @@
 }
 
 .meta-data {
-    color: var(--color_3), 20%;
     font-size: 13px;
     font-weight: 300;
+    color: var(--color_3), 20%;
 }
 
 .meta-data:not(:last-child)::after {
-    content: "\00B7";
     margin: 0 5px;
+    content: '\00B7';
 }

@@ -1,13 +1,13 @@
 .subscriptions-unsubscribe a {
-    background: var(--color_1);
-    border-radius: 4px;
-    color: var(--color_2);
-    display: inline-block;
     font-size: 12px;
     line-height: 2.34;
+    display: inline-block;
+    width: 100%;
     padding: 0 20px;
     text-align: center;
-    width: 100%;
+    color: var(--color_2);
+    border-radius: 4px;
+    background: var(--color_1);
 }
 
 @media (min-width: 768px) {
@@ -17,8 +17,8 @@
 }
 
 .subscriptions-unsubscribe a:hover {
-    background-color: var(--color_1), 20%;
     text-decoration: none;
+    background-color: var(--color_1), 20%;
 }
 
 .subscriptions-table td:last-child {

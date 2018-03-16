@@ -54,9 +54,9 @@
 }
 
 .article-list-item {
-    border-bottom: 1px solid var(--color_5);
     font-size: 16px;
     padding: 15px 0;
+    border-bottom: 1px solid var(--color_5);
 }
 
 .article-list-item a {
@@ -64,6 +64,6 @@
 }
 
 .icon-star::before {
-    color: var(--color_1);
     font-size: 18px;
+    color: var(--color_1);
 }

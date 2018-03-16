@@ -3,12 +3,12 @@
 }
 
 .striped-list-item {
-    align-items: flex-start;
-    border-bottom: 1px solid var(--color_5);
     display: flex;
+    align-items: flex-start;
     flex-direction: column;
     justify-content: flex-end;
     padding: 20px 0;
+    border-bottom: 1px solid var(--color_5);
 }
 
 @media (min-width: 768px) {
@@ -23,12 +23,14 @@
 }
 
 .striped-list-title {
-    color: var(--color_4);
-    margin-bottom: 10px;
     margin-right: 5px;
+    margin-bottom: 10px;
+    color: var(--color_4);
 }
 
-.striped-list-title:hover, .striped-list-title:focus, .striped-list-title:active {
+.striped-list-title:hover,
+.striped-list-title:focus,
+.striped-list-title:active {
     text-decoration: underline;
 }
 
@@ -41,11 +43,11 @@
 }
 
 .striped-list-count {
-    color: var(--color_3), 20%;
-    font-weight: 300;
     font-size: 13px;
+    font-weight: 300;
     justify-content: flex-start;
     text-transform: capitalize;
+    color: var(--color_3), 20%;
 }
 
 @media (min-width: 768px) {
@@ -57,9 +59,9 @@
 }
 
 .striped-list-count-item::after {
-    content: "·";
     display: inline-block;
     padding: 0 5px;
+    content: '·';
 }
 
 @media (min-width: 768px) {
@@ -79,8 +81,8 @@
 
 @media (min-width: 768px) {
     .striped-list-number {
-        color: var(--color_3);
-        display: block;
         font-weight: 400;
+        display: block;
+        color: var(--color_3);
     }
 }

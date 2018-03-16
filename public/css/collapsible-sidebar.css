@@ -1,9 +1,9 @@
 .collapsible-sidebar {
+    position: relative;
+    overflow: hidden;
     flex: 1;
     max-height: 45px;
-    overflow: hidden;
     padding: 10px 0;
-    position: relative;
 }
 
 @media (min-width: 1024px) {
@@ -13,16 +13,16 @@
     }
 }
 
-.collapsible-sidebar[aria-expanded="true"] {
+.collapsible-sidebar[aria-expanded='true'] {
     max-height: none;
 }
 
-.collapsible-sidebar[aria-expanded="true"] .collapsible-sidebar-title::after {
-    content: "\2715";
+.collapsible-sidebar[aria-expanded='true'] .collapsible-sidebar-title::after {
+    content: '\2715';
 }
 
 @media (min-width: 1024px) {
-    .collapsible-sidebar[aria-expanded="true"] .collapsible-sidebar-title::after {
+    .collapsible-sidebar[aria-expanded='true'] .collapsible-sidebar-title::after {
         display: none;
     }
 }
@@ -33,11 +33,11 @@
 
 .collapsible-sidebar-title::after {
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    content: "\25BE";
     position: absolute;
+    top: 50%;
     right: 10px;
+    content: '\25BE';
+    transform: translateY(-50%);
 }
 
 @media (min-width: 1024px) {
@@ -46,7 +46,7 @@
     }
 }
 
-[dir="rtl"] .collapsible-sidebar-title::after {
-    left: 10px;
+[dir='rtl'] .collapsible-sidebar-title::after {
     right: auto;
+    left: 10px;
 }

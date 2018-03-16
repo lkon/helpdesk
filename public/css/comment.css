@@ -1,17 +1,17 @@
 .comment {
-    border-bottom: 1px solid var(--color_5);
     padding: 20px 0;
+    border-bottom: 1px solid var(--color_5);
 }
 
 .comment-heading {
-    margin-bottom: 5px;
     margin-top: 0;
+    margin-bottom: 5px;
 }
 
 .comment-overview {
-    border-bottom: 1px solid var(--color_5);
-    border-top: 1px solid var(--color_5);
     padding: 20px 0;
+    border-top: 1px solid var(--color_5);
+    border-bottom: 1px solid var(--color_5);
 }
 
 .comment-overview p {
@@ -19,11 +19,11 @@
 }
 
 .comment-callout {
-    color: var(--color_3), 20%;
-    display: inline-block;
-    font-weight: 300;
     font-size: 13px;
+    font-weight: 300;
+    display: inline-block;
     margin-bottom: 0;
+    color: var(--color_3), 20%;
 }
 
 .comment-callout a {
@@ -36,25 +36,25 @@
 }
 
 .comment-sorter a {
-    color: var(--color_3), 20%;
-    font-weight: 300;
     font-size: 13px;
+    font-weight: 300;
     text-decoration: none;
+    color: var(--color_3), 20%;
 }
 
-[dir="rtl"] .comment-sorter {
+[dir='rtl'] .comment-sorter {
     float: left;
 }
 
 .comment-wrapper {
+    position: relative;
     display: flex;
     justify-content: space-between;
-    position: relative;
 }
 
 .comment-wrapper.comment-official {
-    border: 1px solid var(--color_1);
     padding: 40px 20px 20px;
+    border: 1px solid var(--color_1);
 }
 
 @media (min-width: 768px) {
@@ -64,19 +64,19 @@
 }
 
 .comment-info {
+    width: 100%;
     min-width: 0;
     padding-right: 20px;
-    width: 100%;
 }
 
-[dir="rtl"] .comment-info {
+[dir='rtl'] .comment-info {
     padding-right: 0;
     padding-left: 20px;
 }
 
 .comment-author {
-    align-items: flex-end;
     display: flex;
+    align-items: flex-end;
     flex-wrap: wrap;
     margin-bottom: 20px;
 }
@@ -91,9 +91,9 @@
     margin-right: 10px;
 }
 
-[dir="rtl"] .comment-avatar {
-    margin-left: 10px;
+[dir='rtl'] .comment-avatar {
     margin-right: 0;
+    margin-left: 10px;
 }
 
 .comment-meta {
@@ -137,31 +137,31 @@
 }
 
 @media (min-width: 768px) {
-    [dir="ltr"] .comment-form-controls {
+    [dir='ltr'] .comment-form-controls {
         text-align: right;
     }
 }
 
-.comment-form-controls input[type="submit"] {
+.comment-form-controls input[type='submit'] {
     margin-top: 15px;
 }
 
 @media (min-width: 1024px) {
-    .comment-form-controls input[type="submit"] {
+    .comment-form-controls input[type='submit'] {
         margin-left: 15px;
     }
 
-    [dir="rtl"] .comment-form-controls input[type="submit"] {
-        margin-left: 0;
+    [dir='rtl'] .comment-form-controls input[type='submit'] {
         margin-right: 15px;
+        margin-left: 0;
     }
 }
 
-.comment-form-controls input[type="checkbox"] {
+.comment-form-controls input[type='checkbox'] {
     margin-right: 5px;
 }
 
-.comment-form-controls input[type="checkbox"] [dir="rtl"] {
+.comment-form-controls input[type='checkbox'] [dir='rtl'] {
     margin-left: 5px;
 }
 
@@ -182,33 +182,38 @@
 }
 
 .comment-body {
-    -moz-hyphens: auto;
-    -ms-hyphens: auto;
-    -webkit-hyphens: auto;
-    word-break: break-word;
     font-family: var(--font_2);
     line-height: 1.6;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+       -moz-hyphens: auto;
+        -ms-hyphens: auto;
 }
 
 .comment-body img {
-    height: auto;
     max-width: 100%;
+    height: auto;
 }
 
-.comment-body ul, .comment-body ol {
+.comment-body ul,
+.comment-body ol {
+    margin: 20px 0 20px 20px;
     padding-left: 20px;
     list-style-position: outside;
-    margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .comment-body ul, [dir="rtl"] .comment-body ol {
+[dir='rtl'] .comment-body ul,
+[dir='rtl'] .comment-body ol {
+    margin-right: 20px;
+    margin-left: 0;
     padding-right: 20px;
     padding-left: 0;
-    margin-left: 0;
-    margin-right: 20px;
 }
 
-.comment-body ul > ul, .comment-body ol > ol, .comment-body ol > ul, .comment-body ul > ol {
+.comment-body ul > ul,
+.comment-body ol > ol,
+.comment-body ol > ul,
+.comment-body ul > ol {
     margin: 0;
 }
 
@@ -221,27 +226,27 @@
 }
 
 .comment-body code {
-    background: var(--color_5), 3%;
+    margin: 0 2px;
+    padding: 0 5px;
     border: 1px solid var(--color_5);
     border-radius: 3px;
-    padding: 0 5px;
-    margin: 0 2px;
+    background: var(--color_5), 3%;
 }
 
 .comment-body pre {
-    background: var(--color_5), 3%;
+    overflow: auto;
+    padding: 10px 15px;
+    white-space: pre;
     border: 1px solid var(--color_5);
     border-radius: 3px;
-    padding: 10px 15px;
-    overflow: auto;
-    white-space: pre;
+    background: var(--color_5), 3%;
 }
 
 .comment-body blockquote {
-    border-left: 1px solid var(--color_5);
-    color: var(--color_3), 20%;
     font-style: italic;
     padding: 0 15px;
+    color: var(--color_3), 20%;
+    border-left: 1px solid var(--color_5);
 }
 
 .comment-mark-as-solved {

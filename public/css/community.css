@@ -1,6 +1,6 @@
 .community-hero {
-    background-image: url($community_background_image);
     margin-bottom: 10px;
+    background-image: url($community_background_image);
 }
 
 .community-footer {
@@ -8,9 +8,10 @@
     text-align: center;
 }
 
-.community-featured-posts, .community-activity {
-    padding-top: 40px;
+.community-featured-posts,
+.community-activity {
     width: 100%;
+    padding-top: 40px;
 }
 
 .community-header {
@@ -33,8 +34,8 @@
 
 /* Community topics grid */
 .topics {
-    max-width: none;
     width: 100%;
+    max-width: none;
 }
 
 .topics-item .meta-group {
@@ -44,8 +45,8 @@
 
 /* Community topic page */
 .topic-header {
-    border-bottom: 1px solid var(--color_5);
     font-size: 13px;
+    border-bottom: 1px solid var(--color_5);
 }
 
 @media (min-width: 768px) {
@@ -56,16 +57,16 @@
 
 .topic-header .dropdown {
     display: block;
-    border-top: 1px solid var(--color_5);
     padding: 10px 0;
+    border-top: 1px solid var(--color_5);
 }
 
 @media (min-width: 768px) {
     .topic-header .dropdown {
-        border-top: 0;
         display: inline-block;
         margin-right: 20px;
         padding: 0;
+        border-top: 0;
     }
 }
 
@@ -77,14 +78,14 @@
 
 /* Topic, post and user follow button */
 .community-follow {
-    margin-bottom: 10px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 @media (min-width: 768px) {
     .community-follow {
-        margin-bottom: 0;
         width: auto;
+        margin-bottom: 0;
     }
 }
 
@@ -92,64 +93,65 @@
     width: 100%;
 }
 
-.community-follow [role="button"] {
+.community-follow [role='button'] {
     line-height: 30px;
-    padding: 0 10px 0 15px;
     position: relative;
     width: 100%;
+    padding: 0 10px 0 15px;
 }
 
 @media (min-width: 768px) {
-    .community-follow [role="button"] {
+    .community-follow [role='button'] {
         width: auto;
     }
 }
 
-.community-follow [role="button"]:hover {
+.community-follow [role='button']:hover {
     background-color: var(--color_1);
 }
 
-.community-follow [role="button"]:hover::after, .community-follow [role="button"]:focus::after {
+.community-follow [role='button']:hover::after,
+.community-follow [role='button']:focus::after {
+    color: var(--color_2);
     border-color: var(--color_2);
-    color: var(--color_2);
 }
 
-.community-follow [role="button"][aria-selected="true"] {
+.community-follow [role='button'][aria-selected='true'] {
+    color: var(--color_2);
     background-color: var(--color_1);
-    color: var(--color_2);
 }
 
-.community-follow [role="button"][aria-selected="true"]::after {
+.community-follow [role='button'][aria-selected='true']::after {
+    color: var(--color_2);
     border-left: 1px solid var(--color_2);
-    color: var(--color_2);
 }
 
-.community-follow [role="button"][aria-selected="true"]:hover {
-    background-color: var(--color_1), 20%;
+.community-follow [role='button'][aria-selected='true']:hover {
     border-color: var(--color_1), 20%;
+    background-color: var(--color_1), 20%;
 }
 
-.community-follow [role="button"]::after {
-    border-left: 1px solid var(--color_1);
-    content: attr(data-follower-count);
-    color: var(--color_1);
-    display: inline-block;
+.community-follow [role='button']::after {
     font-family: var(--font_1);
-    margin-left: 15px;
-    padding-left: 10px;
     position: absolute;
     right: 10px;
+    display: inline-block;
+    margin-left: 15px;
+    padding-left: 10px;
+    content: attr(data-follower-count);
+    color: var(--color_1);
+    border-left: 1px solid var(--color_1);
 }
 
 @media (min-width: 768px) {
-    .community-follow [role="button"]::after {
+    .community-follow [role='button']::after {
         position: static;
     }
 }
 
-[dir="rtl"] .community-follow [role="button"]::after {
-    border-left: 0;
-    border-right: 1px solid var(--color_1);
+[dir='rtl'] .community-follow [role='button']::after {
     margin: 0 10px 0 0;
     padding: 0 10px 0 0;
+    border-right: 1px solid var(--color_1);
+    border-left: 0;
 }

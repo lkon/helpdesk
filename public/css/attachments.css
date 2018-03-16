@@ -1,7 +1,7 @@
 .attachments .attachment-item {
-    padding-left: 20px;
     position: relative;
     margin-bottom: 10px;
+    padding-left: 20px;
 }
 
 .attachments .attachment-item:last-child {
@@ -9,22 +9,22 @@
 }
 
 .attachments .attachment-item::before {
-    color: var(--color_3);
-    content: "\1F4CE";
     font-size: 15px;
-    left: 0;
     position: absolute;
     top: 5px;
+    left: 0;
+    content: '\1F4CE';
+    color: var(--color_3);
 }
 
-[dir="rtl"] .attachments .attachment-item {
-    padding-left: 0;
+[dir='rtl'] .attachments .attachment-item {
     padding-right: 20px;
+    padding-left: 0;
 }
 
-[dir="rtl"] .attachments .attachment-item::before {
-    left: auto;
+[dir='rtl'] .attachments .attachment-item::before {
     right: 0;
+    left: auto;
 }
 
 .upload-dropzone span {

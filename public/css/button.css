@@ -1,70 +1,94 @@
-.button, [role="button"] {
-    border: 1px solid var(--color_1);
-    border-radius: 4px;
-    color: var(--color_1);
-    cursor: pointer;
-    display: inline-block;
+.button,
+[role='button'] {
     font-size: 12px;
     line-height: 2.34;
+    display: inline-block;
+    width: 100%;
     margin: 0;
     padding: 0 20px;
-    text-align: center;
-    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
+    cursor: pointer;
     user-select: none;
+    transition: background-color .12s ease-in-out, border-color .12s ease-in-out, color .15s ease-in-out;
+    text-align: center;
     white-space: nowrap;
-    width: 100%;
+    color: var(--color_1);
+    border: 1px solid var(--color_1);
+    border-radius: 4px;
     -webkit-touch-callout: none;
 }
 
 @media (min-width: 768px) {
-    .button, [role="button"] {
+    .button,
+    [role='button'] {
         width: auto;
     }
 }
 
-.button::after, [role="button"]::after {
+.button::after,
+[role='button']::after {
     color: var(--color_1);
 }
 
-.button:hover, .button:active, .button:focus, .button[aria-selected="true"], [role="button"]:hover, [role="button"]:active, [role="button"]:focus, [role="button"][aria-selected="true"] {
-    background-color: var(--color_1);
-    color: var(--color_2);
+.button:hover,
+.button:active,
+.button:focus,
+.button[aria-selected='true'],
+[role='button']:hover,
+[role='button']:active,
+[role='button']:focus,
+[role='button'][aria-selected='true'] {
     text-decoration: none;
-}
-
-.button[aria-selected="true"]:hover, .button[aria-selected="true"]:focus, .button[aria-selected="true"]:active, [role="button"][aria-selected="true"]:hover, [role="button"][aria-selected="true"]:focus, [role="button"][aria-selected="true"]:active {
+    color: var(--color_2);
     background-color: var(--color_1);
-    border-color: var(--color_1);
 }
 
-.button[data-disabled], [role="button"][data-disabled] {
+.button[aria-selected='true']:hover,
+.button[aria-selected='true']:focus,
+.button[aria-selected='true']:active,
+[role='button'][aria-selected='true']:hover,
+[role='button'][aria-selected='true']:focus,
+[role='button'][aria-selected='true']:active {
+    border-color: var(--color_1);
+    background-color: var(--color_1);
+}
+
+.button[data-disabled],
+[role='button'][data-disabled] {
     cursor: default;
 }
 
-.button-large, input[type="submit"] {
-    background-color: var(--color_5);
-    border: 0;
-    border-radius: 4px;
-    color: var(--color_2);
+.button-large,
+input[type='submit'] {
     font-size: 14px;
     font-weight: 400;
     line-height: 2.72;
+    width: 100%;
     min-width: 190px;
     padding: 0 1.9286em;
-    width: 100%;
+    color: var(--color_2);
+    border: 0;
+    border-radius: 4px;
+    background-color: var(--color_5);
 }
 
 @media (min-width: 768px) {
-    .button-large, input[type="submit"] {
+    .button-large,
+    input[type='submit'] {
         width: auto;
     }
 }
 
-.button-large:hover, .button-large:active, .button-large:focus, input[type="submit"]:hover, input[type="submit"]:active, input[type="submit"]:focus {
+.button-large:hover,
+.button-large:active,
+.button-large:focus,
+input[type='submit']:hover,
+input[type='submit']:active,
+input[type='submit']:focus {
     background-color: var(--color_5), 20%;
 }
 
-.button-large[disabled], input[type="submit"][disabled] {
+.button-large[disabled],
+input[type='submit'][disabled] {
     background-color: var(--color_5);
 }
 
@@ -74,7 +98,9 @@
     background-color: transparent;
 }
 
-.button-secondary:hover, .button-secondary:focus, .button-secondary:active {
+.button-secondary:hover,
+.button-secondary:focus,
+.button-secondary:active {
     color: var(--color_3);
     border: 1px solid var(--color_5);
     background-color: var(--color_5), 3%;

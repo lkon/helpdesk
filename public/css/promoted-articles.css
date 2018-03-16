@@ -18,11 +18,11 @@
     .promoted-articles-item {
         align-self: flex-end;
         flex: 0 0 auto;
-        padding-right: 30px;
         width: 33%; /* Three columns on desktop */
+        padding-right: 30px;
     }
 
-    [dir="rtl"] .promoted-articles-item {
+    [dir='rtl'] .promoted-articles-item {
         padding: 0 0 0 30px;
     }
 }
@@ -32,10 +32,10 @@
 }
 
 .promoted-articles-item a {
-    border-bottom: 1px solid var(--color_5);
-    color: var(--color_3);
     display: block;
     padding: 15px 0;
+    color: var(--color_3);
+    border-bottom: 1px solid var(--color_5);
 }
 
 .promoted-articles-item:last-child a {

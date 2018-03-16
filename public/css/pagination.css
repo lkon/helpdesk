@@ -8,21 +8,21 @@
 }
 
 .pagination li {
-    border-radius: 50%;
-    height: 40px;
     float: left;
-    margin-left: 5px;
     width: 40px;
+    height: 40px;
+    margin-left: 5px;
+    border-radius: 50%;
 }
 
 @media (min-width: 768px) {
     .pagination li {
-        height: 30px;
         width: 30px;
+        height: 30px;
     }
 }
 
-[dir="rtl"] .pagination li {
+[dir='rtl'] .pagination li {
     float: right;
 }
 
@@ -30,19 +30,22 @@
     background-color: #f3f3f3;
 }
 
-.pagination li:hover:not(.pagination-current) span, .pagination li:hover:not(.pagination-current) a {
-    color: var(--color_3);
+.pagination li:hover:not(.pagination-current) span,
+.pagination li:hover:not(.pagination-current) a {
     text-decoration: none;
+    color: var(--color_3);
 }
 
-.pagination a, .pagination span {
+.pagination a,
+.pagination span {
     font-size: 15px;
-    color: var(--color_3), 20%;
     padding: 10px 12px;
+    color: var(--color_3), 20%;
 }
 
 @media (min-width: 768px) {
-    .pagination a, .pagination span {
+    .pagination a,
+    .pagination span {
         font-size: 13px;
         padding: 5px 12px;
     }
@@ -52,7 +55,8 @@
     background-color: var(--color_1);
 }
 
-.pagination-current a, .pagination-current span {
+.pagination-current a,
+.pagination-current span {
     color: var(--color_2);
 }
 
@@ -60,7 +64,7 @@
     border-radius: 3px 0 0 3px;
 }
 
-[dir="rtl"] .pagination-first {
+[dir='rtl'] .pagination-first {
     border-radius: 0 3px 3px 0;
 }
 
@@ -68,6 +72,6 @@
     border-radius: 0 3px 3px 0;
 }
 
-[dir="rtl"] .pagination-last {
+[dir='rtl'] .pagination-last {
     border-radius: 3px 0 0 3px;
 }

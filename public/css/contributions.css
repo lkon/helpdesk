@@ -1,14 +1,14 @@
 .contributions-table td:last-child {
-    color: var(--color_3), 20%;
     font-size: 13px;
     font-weight: 300;
+    color: var(--color_3), 20%;
 }
 
 @media (min-width: 768px) {
     .contributions-table td:last-child {
-        color: inherit;
         font-size: inherit;
         font-weight: inherit;
+        color: inherit;
     }
 }
 

@@ -22,8 +22,8 @@
 }
 
 .post-header {
-    align-items: center;
     display: flex;
+    align-items: center;
     flex-direction: column;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -41,8 +41,8 @@
 }
 
 .post-title {
-    margin-bottom: 20px;
     width: 100%;
+    margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
@@ -64,8 +64,8 @@
 }
 
 .post-author {
-    align-items: flex-start;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
 }
 
@@ -80,8 +80,8 @@
 }
 
 .post-info-container {
-    align-items: flex-start;
     display: flex;
+    align-items: flex-start;
     justify-content: space-between;
     margin-bottom: 40px;
 }
@@ -96,9 +96,9 @@
     }
 }
 
-[dir="rtl"] .post-info {
-    padding-left: 45px;
+[dir='rtl'] .post-info {
     padding-right: 0;
+    padding-left: 45px;
 }
 
 .post-meta {
@@ -108,30 +108,35 @@
     vertical-align: middle;
 }
 
-[dir="rtl"] .post-meta {
-    margin-left: 0;
+[dir='rtl'] .post-meta {
     margin-right: 10px;
+    margin-left: 0;
 }
 
 .post-body img {
-    height: auto;
     max-width: 100%;
+    height: auto;
 }
 
-.post-body ul, .post-body ol {
+.post-body ul,
+.post-body ol {
+    margin: 20px 0 20px 20px;
     padding-left: 20px;
     list-style-position: outside;
-    margin: 20px 0 20px 20px;
 }
 
-[dir="rtl"] .post-body ul, [dir="rtl"] .post-body ol {
+[dir='rtl'] .post-body ul,
+[dir='rtl'] .post-body ol {
+    margin-right: 20px;
+    margin-left: 0;
     padding-right: 20px;
     padding-left: 0;
-    margin-left: 0;
-    margin-right: 20px;
 }
 
-.post-body ul > ul, .post-body ol > ol, .post-body ol > ul, .post-body ul > ol {
+.post-body ul > ul,
+.post-body ol > ol,
+.post-body ol > ul,
+.post-body ul > ol {
     margin: 0;
 }
 
@@ -144,39 +149,39 @@
 }
 
 .post-body code {
-    background: var(--color_5), 3%;
+    margin: 0 2px;
+    padding: 0 5px;
     border: 1px solid var(--color_5);
     border-radius: 3px;
-    padding: 0 5px;
-    margin: 0 2px;
+    background: var(--color_5), 3%;
 }
 
 .post-body pre {
-    background: var(--color_5), 3%;
+    overflow: auto;
+    padding: 10px 15px;
+    white-space: pre;
     border: 1px solid var(--color_5);
     border-radius: 3px;
-    padding: 10px 15px;
-    overflow: auto;
-    white-space: pre;
+    background: var(--color_5), 3%;
 }
 
 .post-body blockquote {
-    border-left: 1px solid var(--color_5);
-    color: var(--color_3), 20%;
     font-style: italic;
     padding: 0 15px;
+    color: var(--color_3), 20%;
+    border-left: 1px solid var(--color_5);
 }
 
 .post-footer {
-    align-items: center;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     padding-bottom: 20px;
 }
 
 .post-comment-count {
-    color: var(--color_3), 20%;
     font-weight: 300;
+    color: var(--color_3), 20%;
 }
 
 .post-comment-count:hover {
@@ -184,29 +189,29 @@
 }
 
 .post-comment-count .icon-comments {
-    color: var(--color_1);
-    content: "\1F4AC";
-    display: inline-block;
     font-size: 18px;
+    display: inline-block;
     padding: 5px;
+    content: '\1F4AC';
+    color: var(--color_1);
 }
 
 .post-sidebar {
-    border-top: 1px solid var(--color_5);
     flex: 1;
     padding: 30px 0;
     text-align: center;
+    border-top: 1px solid var(--color_5);
 }
 
 @media (min-width: 1024px) {
     .post-sidebar {
-        border: 0;
         flex: 1 0 30%;
         padding: 0 0 0 50px;
         text-align: initial;
+        border: 0;
     }
 
-    [dir="rtl"] .post-sidebar {
+    [dir='rtl'] .post-sidebar {
         padding: 0 50px 0 0;
     }
 }
@@ -217,8 +222,8 @@
 
 @media (min-width: 1024px) {
     .post-sidebar h5 {
-        border-bottom: 1px solid var(--color_5);
         padding-bottom: 20px;
+        border-bottom: 1px solid var(--color_5);
     }
 }
 

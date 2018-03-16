@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 30px;
     min-height: 50px;
+    margin-bottom: 30px;
     padding-bottom: 15px;
 }
 
@@ -15,11 +15,11 @@
 }
 
 @media (min-width: 768px) {
-    .sub-nav input[type="search"] {
+    .sub-nav input[type='search'] {
         min-width: 300px;
     }
 }
 
-.sub-nav input[type="search"]::after {
+.sub-nav input[type='search']::after {
     font-size: 15px;
 }

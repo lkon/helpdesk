@@ -9,21 +9,23 @@
     }
 }
 
-.table th, .table th a {
-    color: var(--color_3), 20%;
+.table th,
+.table th a {
     font-size: 13px;
     font-weight: 300;
     text-align: left;
+    color: var(--color_3), 20%;
 }
 
-[dir="rtl"] .table th, [dir="rtl"] .table th a {
+[dir='rtl'] .table th,
+[dir='rtl'] .table th a {
     text-align: right;
 }
 
 .table tr {
-    border-bottom: 1px solid var(--color_5);
     display: block;
     padding: 20px 0;
+    border-bottom: 1px solid var(--color_5);
 }
 
 @media (min-width: 768px) {
@@ -43,14 +45,16 @@
 }
 
 @media (min-width: 1024px) {
-    .table td, .table th {
+    .table td,
+    .table th {
         padding: 20px 30px;
     }
 }
 
 @media (min-width: 768px) {
-    .table td, .table th {
-        padding: 10px 20px;
+    .table td,
+    .table th {
         height: 60px;
+        padding: 10px 20px;
     }
 }

@@ -10,18 +10,18 @@
 }
 
 .breadcrumbs li {
-    color: var(--color_4);
-    display: inline;
-    font-weight: 300;
     font-size: 13px;
-    max-width: 450px;
+    font-weight: 300;
+    display: inline;
     overflow: hidden;
+    max-width: 450px;
     text-overflow: ellipsis;
+    color: var(--color_4);
 }
 
 .breadcrumbs li + li::before {
-    content: ">";
     margin: 0 4px;
+    content: '>';
 }
 
 .breadcrumbs li a:visited {

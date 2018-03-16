@@ -6,7 +6,7 @@
     position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     max-width: 1160px;
     height: 80px;
     margin: 0 auto;
@@ -23,9 +23,13 @@
 .logo {
     font-size: 0;
 }
-
+@media (max-width: 768px) {
+    .logo {
+        flex-grow: 1;
+    }
+}
 .logo a {
-    display: block;
+    display: inline-block;
 }
 
 .logo img {
@@ -39,7 +43,9 @@
     display: inline-flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    align-items: center;
     max-width: 100%;
+    padding: 0 15px;
     white-space: nowrap;
 }
 
@@ -54,11 +60,13 @@
     top: 71px;
     right: 0;
     left: 0;
+    display: block;
     padding: 15px 0;
     border: none;
     border-radius: 1px;
     background: #223145;
     box-shadow: rgba(0, 0, 0, .117647) 0 1px 4px, rgba(0, 0, 0, .117647) 0 1px 2px;
+    white-space: normal;
 }
 
 .user-nav[aria-expanded='true'] > a {
@@ -70,8 +78,13 @@
 }
 
 .nav-wrapper {
-    flex-grow: 1;
     text-align: center;
+}
+
+@media (min-width: 768px) {
+    .nav-wrapper {
+        flex-grow: 1;
+    }
 }
 
 .nav-wrapper a {
@@ -98,12 +111,18 @@
 
 @media (min-width: 768px) {
     .nav-wrapper .user-nav a {
-        font-size: 22px;
+        font-size: 16px;
         display: inline-block;
     }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 900px) {
+    .nav-wrapper .user-nav a {
+        font-size: 22px;
+    }
+}
+
+@media (min-width: 1260px) {
     .nav-wrapper .user-nav a {
         font-size: 30px;
         line-height: 1;
@@ -142,6 +161,7 @@
 /***** User info in header *****/
 .user-info {
     display: inline-block;
+    margin: 0 15px;
 }
 
 .user-info .dropdown-toggle::after {
@@ -227,8 +247,6 @@
     display: inline-block;
     color: var(--color_3), 20%;
 }
-
-
 
 .lang.dropdown .dropdown-toggle {
     font-family: var(--font_1);

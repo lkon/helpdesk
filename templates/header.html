@@ -11,9 +11,14 @@
                 {{!--{{link 'community'}}--}}
                 {{link 'new_request' class='submit-a-request' role='button'}}
                 {{ dc 'link_to_copybet' }}
+                {{#unless signed_in}}
+                {{user_info}}
+                {{/unless}}
             </nav>
         </div>
+        {{#if signed_in}}
         {{user_info}}
+        {{/if}}
         <div class="header__lang">
             {{#if alternative_locales}}
             <div class="dropdown lang" aria-haspopup="true">
